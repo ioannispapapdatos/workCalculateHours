@@ -31,28 +31,54 @@
         <tbody>
           <tr>
             <td>business Monthly Hours</td>
-            <td><input type="number" name="" id="" /></td>
-            <td><input type="number" name="" id="" /></td>
+            <td>
+              <input
+                type="number"
+                name=""
+                id="biz_hours"
+                value=""
+                placeholder="x"
+              />
+            </td>
+            <td>
+              <input type="number" name="" id="" value="" placeholder="" />
+            </td>
           </tr>
           <tr>
             <td>Monthly Bonus</td>
+            <td>
+              <input type="number" name="" id="month_bonus" placeholder="y" />
+            </td>
             <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>WorkHour Value</td>
+            <td>
+              <input type="number" name="" id="hour_value" placeholder="w" />
+            </td>
             <td><input type="number" name="" id="" /></td>
           </tr>
           <tr>
             <td>Total Staff</td>
-            <td><input type="number" name="" id="" /></td>
+            <td>
+              <input type="number" name="" id="total_staff" placeholder="s" />
+            </td>
             <td><input type="number" name="" id="" /></td>
           </tr>
           <tr>
             <td>Staff Hour</td>
-            <td><input type="number" name="" id="" /></td>
+            <td>
+              <input type="number" name="" id="staff_hours" placeholder="z" />
+            </td>
             <td><input type="number" name="" id="" /></td>
           </tr>
         </tbody>
       </table>
-      <button class="btn btn-success">Calculate</button>
+      <h3>Total Bonus Money <span id="display">0</span></h3>
+      <button class="btn btn-success" id="calculate">Calculate</button>
       <button class="btn btn-primary">Reset</button>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

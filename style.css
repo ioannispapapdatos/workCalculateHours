@@ -7,3 +7,9 @@ input {
   padding: 4px;
   box-shadow: 1px 1px 5px 5px black;
 }
+
+#display {
+  border: 2px solid black;
+  width: 70px;
+  padding: 5px;
+}
