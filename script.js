@@ -19,7 +19,17 @@ calculate.addEventListener("click", function () {
   let monthBonusMoney = document.querySelector("#month_bonus").value;
   let workStaff = document.querySelector("#total_staff").value;
   calculation = monthBonusMoney / openBizHours / workStaff;
-  workHourDisplay.innerHTML = calculation;
+
+  if (calculation) {
+    workHourDisplay.innerHTML = calculation;
+  }
+  if (monthBonusMoney || workStaff) {
+    workHourDisplay.style.color = "red";
+    workHourDisplay.innerHTML = "Please Put all Values !!!";
+  } else {
+    workHourDisplay.style.color = "red";
+    workHourDisplay.innerHTML = "Please Put all Values !!!";
+  }
 
   //   totalBonus=0
 });
