@@ -8,8 +8,15 @@ input {
   box-shadow: 1px 1px 5px 5px black;
 }
 
-#display {
-  border: 2px solid black;
-  width: 70px;
-  padding: 5px;
+#work_hour_display {
+  border-bottom: 2px solid black;
+  width: 100px;
+  padding: 6px;
+  font-size: 20px;
+}
+
+.topSection {
+  background-color: blanchedalmond;
+  border: 1px solid black;
+  padding: 10px;
 }

@@ -15,9 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="text-center">Work Calculate Hours App</h2>
+      <div class="topSection">
+        <h2 class="text-center">Work Calculate Hours App</h2>
+        <div class="row">
+          <p>Work Hour Value <span id="work_hour_display">0</span></p>
+          <p>Staff hour Value <span id="stsff_value_display">0</span></p>
+        </div>
+      </div>
 
       <hr />
+
       <table
         class="table table-bordered table-hover table-bordered table-sm table-responsive"
       >
@@ -30,7 +37,14 @@
         </thead>
         <tbody>
           <tr>
-            <td>business Monthly Hours</td>
+            <td>Monthly Bonus money</td>
+            <td>
+              <input type="number" name="" id="month_bonus" placeholder="y" />
+            </td>
+            <td><input type="number" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td>Business Monthly Hours</td>
             <td>
               <input
                 type="number"
@@ -44,20 +58,7 @@
               <input type="number" name="" id="" value="" placeholder="" />
             </td>
           </tr>
-          <tr>
-            <td>Monthly Bonus</td>
-            <td>
-              <input type="number" name="" id="month_bonus" placeholder="y" />
-            </td>
-            <td><input type="number" name="" id="" /></td>
-          </tr>
-          <tr>
-            <td>WorkHour Value</td>
-            <td>
-              <input type="number" name="" id="hour_value" placeholder="w" />
-            </td>
-            <td><input type="number" name="" id="" /></td>
-          </tr>
+
           <tr>
             <td>Total Staff</td>
             <td>
@@ -66,19 +67,21 @@
             <td><input type="number" name="" id="" /></td>
           </tr>
           <tr>
-            <td>Staff Hour</td>
+            <td>XXXX</td>
             <td>
-              <input type="number" name="" id="staff_hours" placeholder="z" />
+              <input type="number" name="" id="staff_hours" placeholder="xx" />
             </td>
             <td><input type="number" name="" id="" /></td>
           </tr>
         </tbody>
       </table>
-      <h3>Total Bonus Money <span id="display">0</span></h3>
-      <button class="btn btn-success" id="calculate">Calculate</button>
-      <button class="btn btn-primary">Reset</button>
-    </div>
 
+      <button class="btn btn-success" id="calculate">Calculate</button>
+      <button onclick="reset()" id="reset" class="btn btn-primary">
+        Reset
+      </button>
+      <hr />
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
