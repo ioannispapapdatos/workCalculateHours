@@ -18,8 +18,20 @@
       <div class="topSection">
         <h2 class="text-center">Work Calculate Hours App</h2>
         <div class="row">
-          <p>Work Hour Value <span id="work_hour_display">0</span></p>
-          <p>Staff hour Value <span id="staff_value_display">0</span></p>
+          <!-- <p
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Live Code Here"
+          >
+            Tooltip on top <span>0</span>
+          </p> -->
+          <div class="displayDiv">
+            <p>
+              Work Hour Value
+              <span id="work_hour_display">0</span>
+            </p>
+            <p>Staff hour Value <span id="staff_value_display">0</span></p>
+          </div>
         </div>
       </div>
 
@@ -30,7 +42,7 @@
       >
         <thead>
           <tr>
-            <th>Categ</th>
+            <th>Categories</th>
             <th>Money</th>
             <th>Money 2B pay</th>
           </tr>
@@ -44,7 +56,7 @@
                 name=""
                 id="biz_hours"
                 value=""
-                placeholder="x"
+                placeholder=""
               />
             </td>
             <td>
@@ -52,7 +64,14 @@
             </td>
           </tr>
           <tr>
-            <td>Monthly Bonus money</td>
+            <td
+              class=""
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Live Value Here from Biz income"
+            >
+              Monthly Bonus money
+            </td>
             <td>
               <input
                 type="number"
@@ -72,7 +91,7 @@
                 type="number"
                 name=""
                 id="total_staff"
-                placeholder="s"
+                placeholder=""
                 required
               />
             </td>
@@ -95,11 +114,27 @@
       </table>
 
       <button class="btn btn-success" id="calculate">Calculate</button>
-      <button onclick="reset()" id="reset" class="btn btn-primary">
-        Reset
-      </button>
+      <button id="resetBtn" class="btn btn-primary">Reset</button>
+
       <hr />
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
     <script src="script.js"></script>
   </body>
 </html>
