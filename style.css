@@ -1,31 +1,31 @@
 input {
-  width: 70px;
+    width: 70px;
 }
 
 .container {
-  margin-top: 20px;
-  padding: 4px;
-  box-shadow: 1px 1px 5px 5px black;
+    margin-top: 20px;
+    padding: 4px;
+    /* box-shadow: 1px 1px 5px 5px black; */
+    border: 3px inset black;
 }
+
 
 /* display style */
 
 #work_hour_display {
-  border: 3px inset black;
-
-  width: 100px;
-  padding: 6px;
-  font-size: 20px;
+    /* border: 3px inset black; */
+    width: 100px;
+    /* padding: 6px; */
+    font-size: 20px;
 }
+
 #staff_value_display {
-  border-bottom: 2px solid black;
-  width: 100px;
-  padding: 6px;
-  font-size: 20px;
+    /* border-bottom: 2px solid black; */
+    width: 100px;
+    /* padding: 6px; */
+    font-size: 20px;
 }
 
 .topSection {
-  background-color: blanchedalmond;
-  border: 1px solid black;
-  padding: 10px;
+    border: 1px solid black;
 }

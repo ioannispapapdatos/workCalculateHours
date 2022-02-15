@@ -13,11 +13,12 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="topSection">
-        <h2 class="text-center">Work Calculate Hours App</h2>
+      <div class="">
         <div class="row">
+          <h2 class="text-center">Work Calculate Hours App</h2>
           <!-- <p
             data-bs-toggle="tooltip"
             data-bs-placement="top"
@@ -25,96 +26,87 @@
           >
             Tooltip on top <span>0</span>
           </p> -->
-          <div class="displayDiv">
+
+          <div class="col-sm-6">
+            <table
+              class="table table-bordered table-hover table-bordered table-sm"
+            >
+              <thead>
+                <tr>
+                  <th>Categories</th>
+                  <th>Money</th>
+                  <!-- <th>Money 2B pay</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-warning">
+                  <td>Business Monthly Hours</td>
+                  <td class="">
+                    <input
+                      type="number"
+                      name=""
+                      id="biz_hours"
+                      value=""
+                      placeholder=""
+                    />
+                  </td>
+                  <!-- <td>
+                        <input type="number" name="" id="" value="" placeholder="" />
+                    </td> -->
+                </tr>
+                <tr>
+                  <td
+                    class=""
+                    data-bs-toggle="tooltip"
+                    data-bs-placement="top"
+                    title="Live Value Here from Biz income"
+                  >
+                    Monthly Bonus money
+                  </td>
+                  <td>
+                    <input
+                      type="number"
+                      name=""
+                      id="month_bonus"
+                      placeholder=""
+                      required
+                    />
+                  </td>
+                  <!-- <td><input type="number" name="" id="" /></td> -->
+                </tr>
+
+                <tr>
+                  <td>Total Staff</td>
+                  <td>
+                    <input
+                      type="number"
+                      name=""
+                      id="total_staff"
+                      placeholder=""
+                      required
+                    />
+                  </td>
+                  <!-- <td><input type="number" name="" id="" /></td> -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-sm-5 p-3">
             <p>
-              Work Hour Value
-              <span id="work_hour_display">0</span>
+              Work Hour Value <br />
+              <span id="work_hour_display">0 €</span>
             </p>
-            <p>Staff hour Value <span id="staff_value_display">0</span></p>
+            <p>
+              Staff hour Value <br />
+              <span id="staff_value_display">0 €</span>
+            </p>
+            <hr />
+
+            <button class="btn btn-success" id="calculate">Calculate</button>
+            <button id="resetBtn" class="btn btn-primary">Reset</button>
           </div>
         </div>
       </div>
-
-      <hr />
-
-      <table
-        class="table table-bordered table-hover table-bordered table-sm table-responsive"
-      >
-        <thead>
-          <tr>
-            <th>Categories</th>
-            <th>Money</th>
-            <th>Money 2B pay</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="bg-warning">
-            <td>Business Monthly Hours</td>
-            <td class="">
-              <input
-                type="number"
-                name=""
-                id="biz_hours"
-                value=""
-                placeholder=""
-              />
-            </td>
-            <td>
-              <input type="number" name="" id="" value="" placeholder="" />
-            </td>
-          </tr>
-          <tr>
-            <td
-              class=""
-              data-bs-toggle="tooltip"
-              data-bs-placement="top"
-              title="Live Value Here from Biz income"
-            >
-              Monthly Bonus money
-            </td>
-            <td>
-              <input
-                type="number"
-                name=""
-                id="month_bonus"
-                placeholder=""
-                required
-              />
-            </td>
-            <td><input type="number" name="" id="" /></td>
-          </tr>
-
-          <tr>
-            <td>Total Staff</td>
-            <td>
-              <input
-                type="number"
-                name=""
-                id="total_staff"
-                placeholder=""
-                required
-              />
-            </td>
-            <td><input type="number" name="" id="" /></td>
-          </tr>
-          <!-- <tr>
-            <td>XXXX</td>
-            <td>
-              <input
-                type="number"
-                name=""
-                id="staff_hours"
-                placeholder="xx"
-                required
-              />
-            </td>
-            <td><input type="number" name="" id="" /></td>
-          </tr> -->
-        </tbody>
-      </table>
-
-      <button class="btn btn-success" id="calculate">Calculate</button>
-      <button id="resetBtn" class="btn btn-primary">Reset</button>
 
       <hr />
     </div>
