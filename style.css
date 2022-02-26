@@ -4,6 +4,7 @@ body {
   height: 100vh;
   align-self: center;
   justify-content: center;
+  padding: 20px;
 }
 
 .main {
@@ -32,17 +33,17 @@ body {
 .time {
   position: absolute;
   top: -10px;
-  right: 0;
+  right: 3px;
 }
 .HoursMoney {
   position: absolute;
   top: -10px;
-  left: 0;
+  left: 3px;
 }
 .workHr {
   position: absolute;
   top: 10px;
-  left: 0;
+  left: 3px;
 }
 #display {
   position: absolute;
