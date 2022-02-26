@@ -1,31 +1,95 @@
-input {
-    width: 70px;
+body {
+  background-color: antiquewhite;
+  display: flex;
+  height: 100vh;
+  align-self: center;
+  justify-content: center;
 }
 
-.container {
-    margin-top: 20px;
-    padding: 4px;
-    /* box-shadow: 1px 1px 5px 5px black; */
-    border: 3px inset black;
+.main {
+  width: 400px;
+  height: 500px;
+  border: 2px solid black;
+  height: 100%;
+  background-color: rgb(192, 223, 248);
+  color: aliceblue;
+  overflow: hidden;
 }
 
-
-/* display style */
-
-#work_hour_display {
-    /* border: 3px inset black; */
-    width: 100px;
-    /* padding: 6px; */
-    font-size: 20px;
+/* display area */
+.topInfo {
+  background-color: violet;
 }
 
-#staff_value_display {
-    /* border-bottom: 2px solid black; */
-    width: 100px;
-    /* padding: 6px; */
-    font-size: 20px;
+.display {
+  background: rgb(88, 11, 63);
+  height: 130px;
+  position: relative;
+
+  border-bottom: 2px solid red;
+  padding: 2px;
+}
+.time {
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+.HoursMoney {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+.workHr {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+#display {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  font-size: 30px;
+
+  /* color: transparent; */
 }
 
-.topSection {
-    border: 1px solid black;
+/* btn area */
+.mainBtn {
+  margin: 20px 1px 20px 35px;
+}
+button {
+  background: rgb(206, 206, 211);
+
+  width: 70px;
+  height: 60px;
+  border-radius: 4px;
+  transition: all 0.6s;
+
+  margin: 2px;
+  box-shadow: 1px 1px 1px 1px rgb(136, 13, 85);
+}
+button:hover {
+  background-color: rgb(97, 172, 27);
+  /* opacity: 0.6; */
+}
+#offline {
+  background-color: tomato;
+}
+#online {
+  background-color: rgb(15, 184, 38);
+}
+
+/* bottom */
+.msg {
+  color: rgb(37, 35, 37);
+  font-size: 16px;
+  animation: move 12s infinite linear;
+}
+@keyframes move {
+  0% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
 }
